@@ -4,9 +4,13 @@
 :root {
   /* ### Primary */
   --light-red: hsl(0, 100%, 67%);
+  --light-red-bg: hsla(0, 100%, 67%, 0.1);
   --orangey-yellow: hsl(39, 100%, 56%);
+  --orangey-yellow-bg: hsla(39, 100%, 56%, 0.1);
   --green-teal: hsl(166, 100%, 37%);
+  --green-teal-bg: hsla(166, 100%, 37%, 0.1);
   --cobalt-blue: hsl(234, 85%, 45%);
+  --cobalt-blue-bg: hsla(234, 85%, 45%, 0.1);
 
   /* ## Gradients */
 
@@ -45,6 +49,7 @@ body {
   align-items: center;
   justify-content: center;
   height: auto;
+  width: 100%
 }
 
 .card-1 {
@@ -55,6 +60,7 @@ body {
     var(--light-royal-blue)
   );
   border-radius: 0 0 2rem 2rem;
+  width: 100%;
 }
 
 .card-1 p {
@@ -63,15 +69,15 @@ body {
     margin: 0 2rem 2.5rem 2rem;
 }
 
-h2 {
-    color: var(--white);
-    margin: 1rem auto 0.5rem auto;
-}
-
 h1 {
   color: var(--light-lavender);
   font-size: 1rem;
   margin: 1.2rem;
+}
+
+h2 {
+  color: var(--white);
+  margin: 1rem auto 0.5rem auto;
 }
 
 .circle {
@@ -101,6 +107,54 @@ h1 {
     font-weight: 500;
     margin: 0;
 }
+
+.card-2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+h3 {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
+  border-radius: 8px;
+}
+
+.n-1, .n-2, .n-3, .n-4 {
+  padding: 0 1rem;
+}
+
+.n-1 {
+  color: var(--light-red);
+  background-color: var(--light-red-bg);
+}
+
+.n-2 {
+  color: var(--orangey-yellow);
+  background-color: var(--orangey-yellow-bg);
+}
+
+.n-3 {
+  color: var(--green-teal);
+  background-color: var(--green-teal-bg);
+}
+
+.n-4 {
+  color: var(--cobalt-blue);
+  background-color: var(--cobalt-blue-bg);
+}
+
+.row p:nth-child(3) {
+  color: black;
+}
+
 /* Desktop */
 @media (min-width: 376) {
 }
