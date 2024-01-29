@@ -185,6 +185,10 @@ span {
   font-size: 1.2rem;
 }
 
+.boton:active {
+  background-color: var(--light-royal-blue);
+}
+
 /* Desktop */
 @media (min-width: 600px) {
   body {
